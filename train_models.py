@@ -12,7 +12,7 @@ from sklearn.metrics import accuracy_score, confusion_matrix, classification_rep
 import pickle
 
 # Step 2: Load Dataset
-data = pd.read_csv(r"C:\Users\Chandani\Desktop\DMDW_PROJECT\diabetes.csv")
+df = pd.read_csv("diabetes.csv")
 print("Dataset loaded ✅")
 print(data.head())
 print(data.info())

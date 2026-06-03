@@ -10,7 +10,8 @@ import matplotlib.pyplot as plt
 # -------------------------------
 # Step 1: Load trained model
 # -------------------------------
-model = pickle.load(open(r"C:\Users\Chandani\Desktop\DMDW_PROJECT\diabetes_model.pkl", "rb"))
+with open("diabetes_model.pkl", "rb") as f:
+    model = pickle.load(f)
 
 # Load dataset for feature names
 data = pd.read_csv(r"C:\Users\Chandani\Desktop\DMDW_PROJECT\diabetes.csv")
