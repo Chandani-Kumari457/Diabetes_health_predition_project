@@ -14,7 +14,7 @@ with open("diabetes_model.pkl", "rb") as f:
     model = pickle.load(f)
 
 # Load dataset for feature names
-data = pd.read_csv(r"C:\Users\Chandani\Desktop\DMDW_PROJECT\diabetes.csv")
+data = pd.read_csv("diabetes.csv")
 features = data.drop("Outcome", axis=1).columns.tolist()
 
 # -------------------------------
